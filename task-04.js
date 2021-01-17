@@ -6,4 +6,4 @@ function converter(cel) {
   let far = celcium * (9 / 5) + 32;
   return far;
 }
-console.log(converter(25) + " " + "F");
+console.log(converter(-5) + " " + "F");
