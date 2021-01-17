@@ -9,12 +9,14 @@
 // знайти медіану даного масиву.
 
 function median(arr){
+    
+    let half = Math.floor(arr.length/2);
 
-
-
-
-
-
+    if(arr.length % 2){
+        return arr[half];
+    }else{
+        return (arr[half-1] + arr[half]) / 2.0;
 }
-median([1, 2, 3, 4, 5]) ;        // 3
-median([3, 6, 10, 15, 20, 99]); // 12.5
+}
+console.log(median([1, 2, 3, 4, 5])) ;        // 3
+console.log(median([3, 6, 10, 15, 20, 99])); // 12.5
